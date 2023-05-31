@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/7d07188168.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- ------------ Home ------------ -->
+    <!-- Header -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/Logo.png" class="Logo"> <!-- Main logo -->
+                <ul id="sidebar"> <!-- Id is for small screens only -->
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="certificates.html">Certificates</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i> <!-- Exit icon -->
+                </ul>
+                <i class="fa-solid fa-ellipsis" onclick="openmenu()"></i> <!-- Menu icon -->
+            </nav>
+            <!-- Home page -->
+            <div class="header-text"> <!-- Capabilities -->
+                <p>UI/UX Designer</p>
+                <p>Web Developer</p>
+                <!-- Introduction -->
+                <h1>Hello! I'm <span>Jose</span>, <br>
+                    <div class="subtext">student at BSU Ras Al Khaima</div> <!-- Description -->
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------ About ------------ -->
+    <!-- About page -->
+    <div id="about">
+        <div class="container">
+            <div class="row"> <!-- To vertically split the page into two columns -->
+                <div class="about-col-1"> <!-- Column 1 -->
+                    <img src="Images/Suited man 2.jpeg" class="user">
+                </div>
+                <!-- Column 2 -->
+                <div class="about-col-2">
+                    <!-- Description and Title -->
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Hi! I'm Jose Enricky V. Belmin, I'm currently studying for Creative Computing at BathSpa University Ras Al Khaima!
+                    I'm 20 years old, male, and my nationality is Filipino. I've spent 8 years of my life here in the UAE studying in Filipino
+                    private schools! I'm not very talkative nor social in person. But when it comes to getting things done, I set my fears asside
+                    and confront anyone I need to. I'm liking web development so far, and would like to further improve upon it with more and 
+                    more projects. I hope I'll get the chance to work side by side with you soon! While we learn a thing or two from each other!
+                    </p>
+                    <!-- Mini tabs -->
+                    <div class="tabtitles">
+                        <p class="tab-links active-link" onclick="opentab('skl')">Skills</p>
+                        <p class="tab-links" onclick="opentab('exp')">Experience</p>
+                        <p class="tab-links" onclick="opentab('edu')">Education</p>
+                    </div>
+                    <!-- Contents of active mini tab -->
+                    <!-- Skills mini tab -->
+                    <div class="tab-contents active-tab" id="skl">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web and App Interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>app Development</span><br>Creating Android and iOS apps</li>
+                        </ul>
+                    </div>
+                    <!-- Experience mini tab -->
+                    <div class="tab-contents" id="exp">
+                        <ul>
+                            <li><span>Still learning</span><br>Coming soon</li>
+                        </ul>
+                    </div>
+                    <!-- Education mini tab -->
+                    <div class="tab-contents" id="edu">
+                        <ul>
+                            <li><span>2021</span><br>Al Alfiah Private School</li>
+                            <li><span>2022</span><br>Mapua Institute of Technology Intramuros</li>
+                            <li><span>2023</span><br>BathSpa University Ras Al Khaima</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------ Projects ------------ -->
+    <!-- Projects page -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="subtitle">My Projects</h1>
+            <div class="projectlist"> <!-- Project list container -->
+                <div>
+                    <i class="fa-solid fa-photo-film"></i> <!-- Camera icon -->
+                    <h2>Photography</h2>
+                    <p>Here are pictures that I took when exploring around
+                        my neighborhood and around the UAE.</p>
+                    <a href="Images/Photography/">View</a> <!-- Link to Photography folder -->
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-python"></i> <!-- Python icon -->
+                    <h2>Python</h2>
+                    <p>A compilation of my very first python experience during
+                        my first semester in BathSpa University.</p>
+                    <a href="Images/Python/">View</a> <!-- Link to Python folder -->
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-pencil"></i> <!-- Pencil icon -->
+                    <h2>Basic Designs</h2>
+                    <p>My first dive into the world of designing and imagination
+                        digitally.</p>
+                    <a href="Images/Basic Designs/">View</a> <!-- Link to Basic Designs folder -->
+                </div>
+
+                <div>
+                    <i class="fa-sharp fa-solid fa-mug-hot"></i> <!-- Coffee icon -->
+                    <h2>CoffeeJab</h2>
+                    <p>A more advanced dive into designing. This time, I tackled
+                        making an app design for a coffee service.
+                    </p>
+                    <a href="Images/CoffeeJab/">View</a> <!-- Link to CoffeeJab folder -->
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-html5"></i> <!-- Html5 icon -->
+                    <i class="fa-brands fa-css3-alt"></i> <!-- Css3 icon -->
+                    <i class="fa-brands fa-square-js"></i> <!-- JavaScript icon -->
+                    <h2>Web Development</h2>
+                    <p>My journey on learning how to utilize HTML, CSS, and Javascript
+                        that eventually led to this ultimatum of a site.
+                    </p>
+                    <a href="Images/Web Development/">View</a> <!-- Link to Web Development folder -->
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- ------------ Certificates ------------ -->
+    <!-- Certificates page -->
+    <div id="certificates">
+        <div class="container">
+            <h1 class="subtitle">Certificates</h1>
+            <div class="credits"> <!-- Image container -->
+                <div class="paper"> <!-- Image 1 -->
+                    <img src="Images/Certificates/Sololearn Certificate.png" alt="Sololearn">
+                </div>
+
+                <div class="paper"> <!-- Image 2 -->
+                    <img src="Images/Certificates/Highschool Diploma.jpg" alt="Diploma">
+                </div>
+
+                <div class="paper"> <!-- Image 3 -->
+                    <img src="Images/Certificates/Hour of Code Certificate.jpg" alt="Hour of Code">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------ Contacts ------------ -->
+    <!-- Contacts page -->
+    <div id="contact">
+        <div class="container">
+            <div class="row"> <!-- To vertically split the page into two columns -->
+                <div class="contact-left"> <!-- Left column -->
+                    <h1 class="subtitle">Contact me!</h1>
+                    <p><i class="fa-solid fa-envelopes-bulk"></i> josebelmin16@gmail.com</p> <!-- Email -->
+                    <p><i class="fa-solid fa-phone"></i> 050-152-8668</p> <!-- Phone number -->
+                    <div class="social-icons"> <!-- Social media icons -->
+                        <a href="https://www.facebook.com/jose.belmin.5"><i
+                                class="fa-brands fa-square-facebook"></i></a> <!-- Facebook icon -->
+                        <a href="https://www.instagram.com/jose_belmin/"><i
+                                class="fa-brands fa-square-instagram"></i></a> <!-- Instagram icon -->
+                        <a href="https://www.linkedin.com/in/jose-belmin-2b3288205/"><i
+                                class="fa-brands fa-linkedin"></i></a> <!-- LinkedIn icon -->
+                    </div>
+                    <a href="<!-- No CV YET -->" class="btn btn2">Download CV</a> <!-- CV Download link -->
+                </div>
+                <div class="contact-right"> <!-- Right column -->
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required> <!-- Name input -->
+                        <input type="email" name="Email" placeholder="Your Email" required> <!-- Email input -->
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <!-- Text message input -->
+                        <button type="submit" class="btn btn2">Submit</button> <!-- Submit button -->
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright -->
+        <div class="copyright">
+            <p>Copyright &copy; JoseBelmin, 2023</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

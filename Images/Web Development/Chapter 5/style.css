@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+/* Background color */
+body{
+	background-color: burlywood;
+}
+/* Video */
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 750px;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7d07188168.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/Logo.png" class="Logo"> <!-- Main logo -->
+                <ul id="sidebar"> <!-- Id is for small screens only -->
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="certificates.html">Certificates</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i> <!-- Exit icon -->
+                </ul>
+                <i class="fa-solid fa-ellipsis" onclick="openmenu()"></i> <!-- Menu icon -->
+            </nav>
+    <!-- About Me -->
+    <div id="about">
+        <div class="container">
+            <div class="row"> <!-- To vertically split the page into two columns -->
+                <div class="about-col-1"> <!-- Column 1 -->
+                    <img src="Images/Suited man 2.jpeg" class="user">
+                </div>
+                <!-- Column 2 -->
+                <div class="about-col-2">
+                    <!-- Description and Title -->
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Hi! I'm Jose Enricky V. Belmin, I'm currently studying for Creative Computing at BathSpa University Ras Al Khaima!
+                    I'm 20 years old, male, and my nationality is Filipino. I've spent 8 years of my life here in the UAE studying in Filipino
+                    private schools! I'm not very talkative nor social in person. But when it comes to getting things done, I set my fears asside
+                    and confront anyone I need to. I'm liking web development so far, and would like to further improve upon it with more and 
+                    more projects. I hope I'll get the chance to work side by side with you soon! While we learn a thing or two from each other!
+                    </p>
+                    <!-- Mini tabs -->
+                    <div class="tabtitles">
+                        <p class="tab-links active-link" onclick="opentab('skl')">Skills</p>
+                        <p class="tab-links" onclick="opentab('exp')">Experience</p>
+                        <p class="tab-links" onclick="opentab('edu')">Education</p>
+                    </div>
+                    <!-- Contents of active mini tab -->
+                    <!-- Skills mini tab -->
+                    <div class="tab-contents active-tab" id="skl">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web and App Interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>app Development</span><br>Creating Android and iOS apps</li>
+                        </ul>
+                    </div>
+                    <!-- Experience mini tab -->
+                    <div class="tab-contents" id="exp">
+                        <ul>
+                            <li><span>Still learning</span><br>Coming soon</li>
+                        </ul>
+                    </div>
+                    <!-- Education mini tab -->
+                    <div class="tab-contents" id="edu">
+                        <ul>
+                            <li><span>2021</span><br>Al Alfiah Private School</li>
+                            <li><span>2022</span><br>Mapua Institute of Technology Intramuros</li>
+                            <li><span>2023</span><br>BathSpa University Ras Al Khaima</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright -->
+    <div class="copyright">
+        <p>Copyright &copy; JoseBelmin, 2023</p>
+    </div>
+</body>
+</html>

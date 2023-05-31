@@ -1,0 +1,243 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Chpt.1 Bonus 1 - HTML &amp; CSS</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="Main">
+		<h1>An assortment of cool HTML and CSS tags <tags></tags></h1>
+	</div>
+	<hr>
+	<div class="Title">
+		<h2>Here's a few HTML tags:</h2>
+	</div>
+		<div class="List">
+			<ol>
+				<li>h# - Heading 1-6</li>
+				<li>ol - Ordered list</li>
+				<li>ul - Unordered list</li>
+				<li>a - Anchor Tag</li>
+				<li>p - Paragraph</li>
+				<li>div - Division</li>
+				<li>img - Image</li>
+				<li>span - Style a part of text</li>
+				<li>br - Break</li>
+				<li>href - Hypertext reference</li>
+			</ol>
+		</div>
+	<hr>
+	<div class="Title2">
+		<h3>More about them:</h3>
+	</div>
+	
+	<div class="Descriptions">
+		<ol>1. &lt;h#&gt; or Heading 1-6 Tags</ol>
+			<p>- Headings serves as the titles for your webpage. There's is a max of 6 you can use each getting smaller and smaller in the emphasis and font size the higher you go. H1 being the largest and most important and H6 being the smallest and least important of all.</p>
+	</div>
+		<div class="Examples">
+			<h4>Example:</h4>
+				<pre>&lt;h1&gt;Heading 1&lt;/h1&gt;</pre>
+				<pre>&lt;h2&gt;Heading 2&lt;/h2&gt;</pre>
+				<pre>&lt;h3&gt;Heading 3&lt;/h3&gt;</pre>
+				<pre>&lt;h4&gt;Heading 4&lt;/h4&gt;</pre>
+				<pre>&lt;h5&gt;Heading 5&lt;/h5&gt;</pre>
+				<pre>&lt;h6&gt;Heading 6&lt;/h6&gt;</pre>
+		</div>
+		<div class="Outputs">
+			<h5>Output</h5>
+				<h1>Heading 1</h1>
+				<h2>Heading 2</h2>
+				<h3>Heading 3</h3>
+				<h4>Heading 4</h4>
+				<h5>Heading 5</h5>
+				<h6>Heading 6</h6>
+		</div>
+	<hr>
+		<ol>2. &lt;ol&gt; or Ordered List Tag</ol>
+			<p>- Ordered lists is a more specific way of organizing your content through using a number system using a line element.</p>
+		<div class="Examples">
+				<h4>Example:</h4>
+				<pre>
+&lt;ol&gt;
+	&lt;li&gt;Apple&lt;/li&gt;
+	&lt;li&gt;Orange&lt;/li&gt;
+	&lt;li&gt;Banana&lt;/li&gt;
+	&lt;li&gt;Strawberry&lt;/li&gt;
+&lt;/ol&gt;
+				</pre>
+		</div>
+		<div class="Outputs">
+				<h5>Output:</h5>
+					<ol>
+						<li>Apple</li>
+						<li>Orange</li>
+						<li>Banana</li>
+						<li>Strawberry</li>
+			</ol>
+		</div>
+	<hr>
+		<ol>3. &lt;ul&gt; or Unordered List Tag</ol>
+			<p>- Unordered lists are generally similar to the one previous, Ordered lists. The main difference is that it uses bullet points instead of a numerics.</p>
+		
+		<div class="Examples">
+			<h4>Example:</h4>
+				<pre>				
+&lt;ul&gt;
+	&lt;li&gt;Apple&lt;/li&gt;
+	&lt;li&gt;Orange&lt;/li&gt;
+	&lt;li&gt;Banana&lt;/li&gt;
+	&lt;li&gt;Strawberry&lt;/li&gt;
+&lt;/ul&gt;
+				</pre>
+		</div>
+		<div class="Outputs">
+			<h5>Output:</h5>
+				<ul>
+					<li>Apple</li>
+					<li>Orange</li>
+					<li>Banana</li>
+					<li>Strawberry</li>
+				</ul>
+		</div>
+	<hr>
+	<ol>4. &lt;a&gt; or Anchor Tag</ol>
+			<p>The Anchor Tag is a way for developers to add hyperlinks to their websites to redirect users to another site. Like references.</p>
+		<div class="Examples">
+				<h4>Example:</h4>
+			<pre>&lt;a href="Study labs"&gt; https://portal.ftcglobal.ae/login/index.php&lt;/a&gt;</pre>
+		</div>
+		<div class="Outputs">
+				<h5>Output:</h5>
+			<a href="Study labs"> https://portal.ftcglobal.ae/login/index.php </a>
+		</div>
+	<hr>
+	<ol>5. &lt;p&gt; or Paragraphs</ol>
+		<p>The paragraph tag is the probably most simple tag in html. It's job is to hold smal to big lines of text and display it on the site.</p>
+		<div class="Examples">
+				<h4>Example:</h4>
+			<pre>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;</pre>
+		</div>
+		<div class="Outputs">
+				<h5>Output:</h5>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		</div>
+	<hr>
+	<ol>6. &lt;div&gt; or Division Tag</ol>
+		<p>The Division tag is to separate a website's content into more managable blocks which makes editing, sorting, and keeping track of things a whole lot easier. These tags are also very usefull when editing specific sections in CSS.</p>
+		<div class="Examples">
+				<h4>Example:</h4>
+			<pre>&lt;div=class"Opening Paragraph"&gt;
+	&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
+&lt;/div&gt;</pre>
+		</div>
+	<hr>
+	<ol>7. &lt;img&gt; or Image Tag</ol>
+		<p>The image tag is paired with multiple other tags that lets the developer choose specific pictures from specific sources ranging from links to local files.</p>
+		<div class="Examples">
+				<h4>Example:</h4>
+			<pre>&lt;img src="https://th.bing.com/th/id/OIP.r8V3TVK8707ofTYj027DwQHaE8?w=245&h=180&c=7&r=0&o=5&pid=1.7"&gt;</pre>
+		</div>
+		<div class="Outputs">
+				<h5>Output:</h5>
+				<img src="https://th.bing.com/th/id/OIP.r8V3TVK8707ofTYj027DwQHaE8?w=245&h=180&c=7&r=0&o=5&pid=1.7">
+	</div>
+	<hr>
+	<ol>8. &lt;span&gt; or Span Tag</ol>
+		<p>The Span tag is a general-purpose inline container for content and inline elements. When no other semantic element is available, it is used to group elements for stylistic purposes (by using the class or id properties).</p>
+		<div class="Examples">
+				<h4>Example:</h4>
+			<pre>&lt;span style="color:blue;font-weight:strong"&gt;BathSpaUniversity&lt;/span&gt;</pre>
+		</div>
+		<div class="Outputs">
+				<h5>Output:</h5>
+		<span style="color:blue;font-weight:600;">BathSpaUniversity</span>
+		</div>
+	<hr>
+	<ol>9. &lt;br&gt; or Break Tag</ol>
+		<p>The Break Tag is used to split long lines of text into the next line instead of continously going to the right or left of the screen.</p>
+		<div class="Examples">
+				<h4>Example:</h4>
+			<pre>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;br&gt;<br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;br&gt;<br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,&lt;br&gt;<br>sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;</pre>
+		</div>
+		<div class="Outputs">
+				<h5>Output:</h5>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,<br>sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	<hr>
+	<ol>10. &lt;href&gt; or Hypertext Reference Tag</ol>
+		<p>The href tag is used after the anchor tag, it's responsible for making external links be accessible in your website.</p>
+		<div class="Examples">
+				<h4>Example:</h4>
+			<pre>&lt;a <span style="color:blueviolet;font-style: italic;font-weight: bolder">href</span>="Study labs"&gt; https://portal.ftcglobal.ae/login/index.php&lt;/a&gt;</pre>
+		</div>
+		<div class="Outputs">
+				<h5>Output:</h5>
+			<a href="Study labs"> https://portal.ftcglobal.ae/login/index.php </a>
+		</div>
+<hr>
+	<div class="Title">
+		<h2>Here's a few CSS tags:</h2>
+	</div>
+		<div class="List">
+			<ol>
+				<li>background-clip</li>
+				<li>background-origin</li>
+				<li>background-size</li>
+				<li>align-content</li>
+				<li>flex</li>
+				<li>order</li>
+				<li>font-family</li>
+				<li>border-image</li>
+			</ol>
+		</div>
+<hr>
+	<div class="Title2">
+		<h3>More about them:</h3>
+	</div>
+	
+	<div class="Descriptions">
+		<ol>1. background-clip</ol>
+			<p>- Accurately controls how far the color and image is from the element.</p>
+	</div>
+	
+	<div class="Descriptions">
+		<ol>2. background-origin</ol>
+			<p>- Accurately control where the background image goes to.</p>
+	</div>
+	
+	<div class="Descriptions">
+		<ol>3. background-size</ol>
+			<p>- For resizing the image.</p>
+	</div>
+	
+	<div class="Descriptions">
+		<ol>4. align-content</ol>
+			<p>- Tries to align a "flex" container's lines vertically.</p>
+	</div>
+	
+	<div class="Descriptions">
+		<ol>5. flex</ol>
+			<p>- Groups content for a flexible length.</p>
+	</div>
+	
+	<div class="Descriptions">
+		<ol>6. order</ol>
+			<p>- Specifically arranges the order of a flexible item in a flex or grid container.</p>
+	</div>
+	
+	<div class="Descriptions">
+		<ol>7. font-family</ol>
+			<p>- Allows for custom or premade font styles for use in the website.</p>
+	</div>
+	
+	<div class="Descriptions">
+		<ol>8. border-image</ol>
+			<p>- Allows for the use of an image as a border to an element.</p>
+	</div>
+<hr>
+&copy; Jose Belmin 2023
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7d07188168.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/Logo.png" class="Logo"> <!-- Main logo -->
+                <ul id="sidebar"> <!-- Id is for small screens only -->
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="certificates.html">Certificates</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i> <!-- Exit icon -->
+                </ul>
+                <i class="fa-solid fa-ellipsis" onclick="openmenu()"></i> <!-- Menu icon -->
+            </nav>
+    <!-- Contacts -->
+    <div id="contact">
+        <div class="container">
+            <div class="row"> <!-- To vertically split the page into two columns -->
+                <div class="contact-left"> <!-- Left column -->
+                    <h1 class="subtitle">Contact me!</h1>
+                    <p><i class="fa-solid fa-envelopes-bulk"></i> josebelmin16@gmail.com</p> <!-- Email -->
+                    <p><i class="fa-solid fa-phone"></i> 050-152-8668</p> <!-- Phone number -->
+                    <div class="social-icons"> <!-- Social media icons -->
+                        <a href="https://www.facebook.com/jose.belmin.5"><i
+                                class="fa-brands fa-square-facebook"></i></a> <!-- Facebook icon -->
+                        <a href="https://www.instagram.com/jose_belmin/"><i
+                                class="fa-brands fa-square-instagram"></i></a> <!-- Instagram icon -->
+                        <a href="https://www.linkedin.com/in/jose-belmin-2b3288205/"><i
+                                class="fa-brands fa-linkedin"></i></a> <!-- LinkedIn icon -->
+                    </div>
+                    <a href="<!-- No CV YET -->" class="btn btn2">Download CV</a> <!-- CV Download link -->
+                </div>
+                <div class="contact-right"> <!-- Right column -->
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required> <!-- Name input -->
+                        <input type="email" name="Email" placeholder="Your Email" required> <!-- Email input -->
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <!-- Text message input -->
+                        <button type="submit" class="btn btn2">Submit</button> <!-- Submit button -->
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright -->
+        <div class="copyright">
+            <p>Copyright &copy; JoseBelmin, 2023</p>
+        </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background: linear-gradient(15deg, #eaf6ff, #4ce0d2, #add9f4);
+	padding-left: 60px;
+	padding-right: 60px;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"
+}
+.Main{
+	font-family: "Bath Spa New Roman Title";
+	text-align: center;
+	font-size: 25px;
+	background-color: ghostwhite;
+	padding: 1px;
+	border-radius: 10px;
+}
+
+.Title{
+	padding-left: 20px;
+	padding-right:20px;
+	background-color: whitesmoke;
+	text-align: left;
+	border-radius: 5px;
+}
+.Title2{
+	padding-left: 20px;
+	padding-right:20px;
+	background-color: whitesmoke;
+	text-align: left;
+	border-radius: 5px;
+}
+
+.Examples{
+	background-color: seashell;
+	padding-bottom: 5px;
+	padding-top: 1px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+}
+
+.Outputs{
+	background-color: #cfdee7;
+	padding-bottom: 1px;
+	padding-top: 1px;
+	border-radius: 5px;
+}
+
+.Descriptions{
+	font-size: 17px;
+	border-radius: 5px;
+}

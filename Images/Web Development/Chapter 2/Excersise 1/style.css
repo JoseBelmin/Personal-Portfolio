@@ -1,0 +1,99 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Body */
+
+body{
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	background-color: #e5f4e3;
+	text-align: justify;
+	margin-left: 30px;
+	margin-right: 25px;
+}
+
+/* Title */
+
+h1{
+	font-size: 45px;
+	text-align: center;
+	text-decoration: underline;
+	text-decoration-style: dashed;
+	padding: 50px;
+}
+
+/* Plot Summary */
+
+h3{
+	padding-top: 35px;
+	text-align: center;
+	text-decoration: underline;
+}
+
+/* Character & Cast member list */
+#Cast{
+	padding-left: 0%;
+}
+
+/* Button Link */
+a.button {
+	background: linear-gradient(#32746d, #104f55, #01200f);
+	border: none;
+	color: white;
+	padding: 5px 15px;
+	font-family: Raleway, "Raleway Black", "Raleway ExtraBold", "Raleway ExtraLight", "Raleway Light", "Raleway Medium", "Raleway SemiBold", "Raleway Thin";
+	text-decoration: none;
+	text-align: center;
+	font-weight: 500;
+	font-size: 16px;
+	display: inline-block;
+	border-radius: 12px;
+}
+
+/* Official Site Link */
+.link{
+	text-align: center;
+	padding-top: 25px;
+}
+
+a.button:active { border-style: inset; }
+
+/* Official Site Link */
+.link{
+	font-family: Raleway, "Raleway Black", "Raleway ExtraBold", "Raleway ExtraLight", "Raleway Light", "Raleway Medium", "Raleway SemiBold", "Raleway Thin";
+	text-align: center;
+	padding-top: 50px;
+	border-radius: 50px;
+}
+
+/* Nav bar background */
+.Navbar{
+	top: 0%;
+  	background-color: #39393a;
+  	overflow: hidden;
+	filter: drop-shadow(0.2em 0.17em 0.05em);
+	position: fixed;
+	border-radius: 5px;
+}
+
+/* Link styles */
+.Navbar a{
+  	float: left;
+  	color: #f2f2f2;	
+  	text-align: center;
+  	padding: 14px 16px;
+  	text-decoration: none;
+  	font-size: 17px;
+}
+
+/* Link color change, on hover */
+.Navbar a:hover{
+  	background-color: #ffffff;
+  	color: black;
+}
+
+/* Color on active link */
+.Navbar a.active{
+ 	background-color: #06a77d;
+  	color: #FFFFFF;
+	text-decoration: underline;
+}

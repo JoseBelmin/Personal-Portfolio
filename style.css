@@ -1,0 +1,406 @@
+/* Main */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS';
+    box-sizing: border-box;
+}
+
+/* Auto scroll when nav bar element is clicked */
+html {
+    scroll-behavior: smooth;
+}
+/* Html background */
+body {
+    background: hsl(0deg, 0%, 0%); /* black */
+    color:hsl(0deg, 0%, 100%); /* white */
+}
+
+/* ------------ Header ------------*/
+/* Home page background */
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(Images/Suited\ man\ 2.jpeg);
+}
+/* Screen spacing */
+.container {
+    padding: 10px 10%;
+}
+/* Positioning navbar elements to top left */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;    
+}
+/* Logo size */
+.Logo {
+    width: 140px;
+}
+/* Sorting navbar elements horizontaly */
+nav ul li { 
+    display: inline-block;
+    list-style: none;
+    margin: 10px 25px;
+}
+/* Styling navbar elements */
+nav ul li a {
+    color:hsl(0deg, 0%, 90%); /* light grey */
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+/* Styling the navbar element underline  */
+nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 2.5px;
+    background: hsl(37, 98%, 53%); /* yellow */
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    transition: 0.25s; /* animation time */
+}
+/* Navbar element underline on hover */
+nav ul li a:hover::after {
+    width: 100%;
+}
+/* Welcome message positioning */
+.header-text {
+    margin-top: 20%;
+    font-size: 24px;
+}
+/* Main greeting */
+.header-text h1 {
+    margin-top: 20px;
+    font-size: 64px;
+}
+/* Name highlight */
+.header-text h1 span {
+    color:hsl(37, 98%, 53%); /* yellow */
+}
+/* Sub greeting */
+.subtext {
+    font-size: 48px;
+}
+
+/* ------------ About ------------*/
+/* Space between Home and About pages */
+#about {
+    padding: 80px 0;
+    color: hsl(0, 0, 100); /* white */
+}
+/* Fullbody picture */
+.user {
+    width: 450px;
+}
+/* Vertically separating the container */
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/* Amount of space taken by Picture */
+.about-col-1 {
+    flex-basis: 35%;
+}
+/* Picture sizing */
+.about-col-1 img {
+    width: 100%;
+    border-radius: 5px;
+}
+/* Amount of space taken by text */
+.about-col-2 {
+    flex-basis: 55%;
+}
+/* About me title */
+.subtitle {
+    font-size: 60px;
+    font-weight: 600;
+    color: hsl(0, 0, 100); /* white */
+}
+/* Mini tabs container sizing */
+.tabtitles {
+    display: flex;
+    margin: 20px 0 4    0px;
+}
+/* Mini tab elements styling */
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+/* Styling the mini tab elements underline */
+.tab-links::after {
+    content: '';
+    width: 0%;
+    height: 2.5px;
+    background: hsl(37, 98%, 53%); /* yellow */
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    transition: 0.25s;
+}
+/* Mini tab element underline on hover */
+.tab-links:hover::after {
+    width: 100%;
+}
+/* Active element underline */
+.tab-links.active-link::after {
+    width: 50%;
+}
+/* Mini tab content styling */
+.tab-contents ul li {
+    list-style: none;
+    margin: 25px 0;
+}
+/* Tab content title */
+.tab-contents ul li span{
+    color: hsl(37, 98%, 53%); /* yellow */
+    font-size: 16px;
+}
+/* Removing unrelated tab content to the active mini tab */
+.tab-contents {
+    display: none;
+}
+/* Showing related tab content to the active mini tab */
+.tab-contents.active-tab {
+    display: block;
+}
+
+/* ------------ Projects ------------*/
+/* Space between About and Project pages  */
+#projects {
+    padding: 30px 0;
+}
+/* Project list styling */
+.projectlist div {
+    background-color: hsl(221deg, 51%, 16%); /* navy blue */
+    padding: 40px;
+    margin-top: 15px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 5px;
+    transition: background 0.35s, transform 0.35s; /* Stand up animation timing */
+}
+/* Project list icon styling */
+.projectlist div i {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+/* Project list title styling */
+.projectlist div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+/* Project list link styling */
+.projectlist div a {
+    text-decoration: none;
+    color: hsl(0deg, 0%, 100%); /* white */
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+/* Project list stand up animation */
+.projectlist div:hover {
+    background-color: hsl(37, 98%, 53%); /* yellow */
+    transform: translateY(-10px);
+}
+
+/* ------------ Certificates ------------ */
+/* Space between Projects and Certificates pages */
+#certificates {
+    padding: 50px 50;
+
+}
+/* Certificate positioning */
+.credits {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+/* Image container sizing */
+.paper {
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+/* Image styling */
+.paper img {
+    width: 100%;
+    border-radius: 5px;
+    display: block;
+    margin: 10px;
+    transition: transform 0.35s;
+}
+/* Image zoom in on hover */
+.paper:hover img {
+    transform: scale(1.1);
+}
+
+/* ------------ Contacts ------------ */
+/* Space taken by left column */
+.contact-left {
+    flex-basis: 35%;
+}
+/* Space above personal information */
+.contact-left p {
+    margin-top: 20px;
+}
+/* Personal information icons */
+.contact-left p i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+/* Space taken by the right column */
+.contact-right {
+    flex-basis: 60%;
+    width: 100%;
+}
+/* Social media icon spacing */
+.social-icons {
+    margin-top: 30px;
+}
+/* Social media icon styling */
+.social-icons a{
+    text-decoration: none;
+    font-size: 25px;
+    margin-right: 20px;
+    color: hsl(0deg, 0%, 90%); /*light grey */
+    display: inline-block;
+    transition: transform 0.35s;
+}
+/* Social media icon stand up and color change on hover */
+.social-icons a:hover{
+    color: hsl(37, 98%, 53%); /* yellow */
+    transform: translateY(-5px);
+}
+/* CV and Submit button styling */
+.btn.btn2 {
+    display: inline-block;
+    background: hsl(37, 98%, 53%); /* yellow */
+    border-radius: 5px;
+    color: hsl(0deg, 0%, 100%); /* white */
+}
+/* Form, text input background styling */
+form input, form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: hsl(221deg, 51%, 16%); /* navy blue */
+    padding: 15px;
+    margin: 10px;
+    color: hsl(0deg, 0%, 100%); /* white */
+    font-size: 18px;
+    border-radius: 6px;
+}
+/* Submit button styling */
+form .btn2 {
+    padding: 14px 60px;
+    font-size: 16px;
+    margin-top: 18px;
+    cursor: pointer;
+}
+/* Copyright footer */
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background: hsl(221deg, 51%, 16%); /* navy blue */
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+/* ------------ Css for small screens ------------ */
+/* To hide icons when in desktop view */
+nav .fa-solid {
+    display: none;
+}
+/* When screeen is less than 600px */
+@media only screen and (max-width: 600px) {
+    #header {
+        background-image: url(Images/Suited\ man\ 2.jpeg);
+    }
+    /* Main greeting repositioning */
+    .header-text {
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    /* Main greeting resizing */
+    .header-text h1 {
+        font-size: 30px;;
+    }
+    /* Sub greeting resizing */
+    .header-text .subtext {
+        font-size: 23px;
+    }
+    /* To show icons when in mobile view */
+    nav .fa-solid{
+        display: block;
+        font-size: 20px;
+    }
+    /* Sidebar background */
+    nav ul {
+        background: hsl(37, 98%, 53%); /* navy blue */
+        position: fixed;
+        top: 0;
+        right: -150;
+        width: 150px;
+        height: 100vh;
+        padding-top: 45px;
+        z-index: 2;
+        transition: right 0.35s;
+    }
+    /* Sidebar elements spacing */
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+    /* Menu and close icon positioning */
+    nav ul .fa-solid {
+        position: absolute;
+        top: 22px;
+        left: 22px;
+        cursor: pointer;
+    }
+    /* About page */
+    .subtitle {
+        font-size: 40px;
+    }
+    /* Both columns adjusting to new screen real estate */
+    .about-col-1, .about-col-2 {
+        flex-basis: 100%;
+    }
+    /* Space between picture and text */
+    .about-col-1 {
+        margin-bottom: 25px;
+    }
+    /* Text resizing */
+    .about-col-2 {
+        font-size: 14px;
+    }
+    /* Mini tabs resizing */
+    .tab-links {
+        font-size: 16px;
+        margin-right: 18px;
+    }
+    /* Contacts, Text input background resizing */
+    .contact-left, .contact-right {
+        flex-basis: 100%;
+    }
+    /* Footer resizing */
+    .copyright {
+        font-size: 14px;
+    }
+}
+/* Message after submitting infromation */
+#msg{
+    color: hsl(0deg, 0%, 90%); /* light grey */
+    margin-top: 5px;
+    display: block;
+}

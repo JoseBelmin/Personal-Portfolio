@@ -1,0 +1,11 @@
+.widthSet {
+    max-width: 720px;
+}
+
+.heightSet {
+    max-height: 480px;
+}
+
+hr{
+	width: 720px;
+}

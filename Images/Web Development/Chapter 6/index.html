@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href="script.js" rel="stylesheet" type="text/javascript">
+</head>
+
+<body>
+	<!--Title-->
+	<h1>Simple Petrol Calculator</h1> <hr>
+	<!--Background-->
+	<div class = "container">
+		<!--Calculator itself-->
+		<div class = "calculator">
+              <!--Cost of petrol per litre-->
+			<form id = "petrolCost">
+                <label for = "cost">Cost per Litre:</label>
+                    <input type ="text" id = "cost" name = "cost" placeholder = "1.72 dhs">
+                <br>
+				<!--Litres purchased-->
+                <label for = "litres">Litres Purchased:</label>
+                    <input type ="text" id = "litre" name = "litre" placeholder = "0 L">
+			</form>
+                <hr>
+            <!--Calculate button-->
+            <div id = "calculate">
+                <button type = "button" onClick = "cost(),litres()" id = "submit">Calculate</button>
+            </div>
+		<!--Total cost-->
+		<p id = "totalDisplay">Total cost:</p>
+		</div>
+	</div>
+</body>
+</html>
