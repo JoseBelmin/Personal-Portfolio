@@ -13,17 +13,6 @@ var tablinks = document.getElementsByClassName("tab-links"); // Grabs mini tab t
             document.getElementById(tabname).classList.add("active-tab") // Shows active content on click
         }
 
-// Onclick function for mobile view sidebar
-var sidebar = document.getElementById("sidebar");
-
-        function openmenu() {
-            sidebar.style.right = "0";
-        }
-
-        function closemenu() {
-            sidebar.style.right = "-150px";
-        }
-
 // Google sheet repository code by Jamie Wilson (https://github.com/jamiewilson/form-to-google-sheets)
 const scriptURL = '<https://script.google.com/macros/s/AKfycbyes-mHwr8JfizAcfD37KmvJae1AHqkulo63oxr2D-ktuw2KUdcRdh7R_W9IRcRWiFf/exec>'
         const form = document.forms['submit-to-google-sheet']
